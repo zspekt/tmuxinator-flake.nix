@@ -14,13 +14,13 @@ buildRubyGem rec {
   name = "${gemName}-${version}";
   gemName = "tmuxinator";
   version = "3.3.0";
-  source.sha256 = "t96v3RwBfezB644RVbTmO8i/xh1F23WQC8PBxc/msjg=";
+  source.sha256 = "sha256-gdU+2QcWyWIxnSxl5eYqBcjWrusuC+P1IfqOVv5aIZk=";
 
   erubis = buildRubyGem rec {
     inherit ruby;
     name = "ruby${ruby.version}-${gemName}-${version}";
     gemName = "erubis";
-    version = "2.7.0";
+    version = "3.3.0";
     source.sha256 = "1fj827xqjs91yqsydf0zmfyw9p4l2jz5yikg3mppz6d7fi8kyrb3";
   };
 
